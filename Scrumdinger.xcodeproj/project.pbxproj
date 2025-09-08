@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		721A4F472E64F7F800823F09 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 721A4F462E64F7F800823F09 /* ThemeKit */; };
-		721A4F4E2E66324400823F09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721A4F4D2E66324400823F09 /* Preview Assets.xcassets */; };
+		725E4D102E6E746D0065CEF5 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 725E4D0F2E6E746D0065CEF5 /* ThemeKit */; };
 		72FC6A572E6636560083C891 /* Scrum+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FC6A562E6636520083C891 /* Scrum+Samples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		721A4F4D2E66324400823F09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		722954732E649A0700330FF1 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FC6A562E6636520083C891 /* Scrum+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scrum+Samples.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -31,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721A4F472E64F7F800823F09 /* ThemeKit in Frameworks */,
+				725E4D102E6E746D0065CEF5 /* ThemeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				72FC6A562E6636520083C891 /* Scrum+Samples.swift */,
-				721A4F4D2E66324400823F09 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -84,7 +81,7 @@
 			);
 			name = Scrumdinger;
 			packageProductDependencies = (
-				721A4F462E64F7F800823F09 /* ThemeKit */,
+				725E4D0F2E6E746D0065CEF5 /* ThemeKit */,
 			);
 			productName = Scrumdinger;
 			productReference = 722954732E649A0700330FF1 /* Scrumdinger.app */;
@@ -115,7 +112,7 @@
 			mainGroup = 7229546A2E649A0700330FF1;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				721A4F452E64F7F800823F09 /* XCLocalSwiftPackageReference "../../../Downloads/CreatingACardView/StartingProject/TutorialResources/ThemeKit" */,
+				725E4D0E2E6E746D0065CEF5 /* XCLocalSwiftPackageReference "ThemeKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 722954742E649A0700330FF1 /* Products */;
@@ -132,7 +129,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721A4F4E2E66324400823F09 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,14 +357,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		721A4F452E64F7F800823F09 /* XCLocalSwiftPackageReference "../../../Downloads/CreatingACardView/StartingProject/TutorialResources/ThemeKit" */ = {
+		725E4D0E2E6E746D0065CEF5 /* XCLocalSwiftPackageReference "ThemeKit" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../Downloads/CreatingACardView/StartingProject/TutorialResources/ThemeKit;
+			relativePath = ThemeKit;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		721A4F462E64F7F800823F09 /* ThemeKit */ = {
+		725E4D0F2E6E746D0065CEF5 /* ThemeKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ThemeKit;
 		};
