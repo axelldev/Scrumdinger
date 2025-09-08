@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		722F9D862E6E79A500281645 /* TimerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 722F9D852E6E79A500281645 /* TimerKit */; };
 		725E4D102E6E746D0065CEF5 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 725E4D0F2E6E746D0065CEF5 /* ThemeKit */; };
 		72FC6A572E6636560083C891 /* Scrum+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FC6A562E6636520083C891 /* Scrum+Samples.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				725E4D102E6E746D0065CEF5 /* ThemeKit in Frameworks */,
+				722F9D862E6E79A500281645 /* TimerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,7 @@
 			name = Scrumdinger;
 			packageProductDependencies = (
 				725E4D0F2E6E746D0065CEF5 /* ThemeKit */,
+				722F9D852E6E79A500281645 /* TimerKit */,
 			);
 			productName = Scrumdinger;
 			productReference = 722954732E649A0700330FF1 /* Scrumdinger.app */;
@@ -113,6 +116,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				725E4D0E2E6E746D0065CEF5 /* XCLocalSwiftPackageReference "ThemeKit" */,
+				722F9D842E6E79A500281645 /* XCLocalSwiftPackageReference "TimerKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 722954742E649A0700330FF1 /* Products */;
@@ -357,6 +361,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		722F9D842E6E79A500281645 /* XCLocalSwiftPackageReference "TimerKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TimerKit;
+		};
 		725E4D0E2E6E746D0065CEF5 /* XCLocalSwiftPackageReference "ThemeKit" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ThemeKit;
@@ -364,6 +372,10 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		722F9D852E6E79A500281645 /* TimerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TimerKit;
+		};
 		725E4D0F2E6E746D0065CEF5 /* ThemeKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ThemeKit;
