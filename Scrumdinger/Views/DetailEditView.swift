@@ -62,5 +62,8 @@ struct DetailEditView: View {
 
 #Preview {
     @Previewable @State var scrum = DailyScrum.emptyScrum
-    DetailEditView(scrum: $scrum)
+    VStack {
+        Text(scrum.title)
+        DetailEditView(scrum: $scrum)
+    }
 }
