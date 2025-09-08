@@ -9,7 +9,8 @@ import SwiftUI
 import ThemeKit
 
 struct DetailView: View {
-    let scrum: DailyScrum
+    @Binding var scrum: DailyScrum
+    @State private var editingScrum = DailyScrum.emptyScrum
     @State private var isPresentingEditView = false
 
     var body: some View {
@@ -50,11 +51,12 @@ struct DetailView: View {
         .toolbar {
             Button("Edit") {
                 isPresentingEditView = true
+                editingScrum = scrum
             }
         }
         .sheet(isPresented: $isPresentingEditView) {
             NavigationStack {
-                DetailEditView()
+                DetailEditView(scrum: $editingScrum)
                     .navigationTitle(scrum.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
@@ -74,5 +76,6 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(scrum: DailyScrum.sampleData[0])
+    @Previewable @State var scrum = DailyScrum.sampleData[0]
+    DetailView(scrum: $scrum)
 }
