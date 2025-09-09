@@ -9,7 +9,9 @@ import SwiftUI
 
 struct DetailEditView: View {
     @Binding var scrum: DailyScrum
+    let saveEdits: (DailyScrum) -> Void
     @State private var attendeeName = ""
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         Form {
@@ -17,7 +19,11 @@ struct DetailEditView: View {
                 TextField("Title", text: $scrum.title)
 
                 HStack {
-                    Slider(value: $scrum.lengthInMinutesAsDouble, in: 5...30, step: 1) {
+                    Slider(
+                        value: $scrum.lengthInMinutesAsDouble,
+                        in: 5...30,
+                        step: 1
+                    ) {
                         Text("Length")
                     }
                     .accessibilityValue("\(scrum.lengthInMinutes) minutes")
@@ -27,7 +33,7 @@ struct DetailEditView: View {
                     Text("\(scrum.lengthInMinutes) minutes")
                         .accessibilityHidden(true)
                 }
-                
+
                 ThemePicker(selection: $scrum.theme)
             }
 
@@ -57,6 +63,20 @@ struct DetailEditView: View {
                 }
             }
         }
+        .toolbar {
+            ToolbarItem(placement: .cancellationAction) {
+                Button("Cancel") {
+                   dismiss()
+                }
+            }
+            
+            ToolbarItem(placement: .confirmationAction) {
+                Button("Done") {
+                    saveEdits(scrum)
+                    dismiss()
+                }
+            }
+        }
     }
 }
 
@@ -64,6 +84,6 @@ struct DetailEditView: View {
     @Previewable @State var scrum = DailyScrum.emptyScrum
     VStack {
         Text(scrum.title)
-        DetailEditView(scrum: $scrum)
+        DetailEditView(scrum: $scrum, saveEdits: { _ in })
     }
 }
