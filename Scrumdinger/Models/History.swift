@@ -12,13 +12,13 @@ import SwiftData
 class History: Identifiable {
     var id: UUID
     var date: Date
-    var atteedees: [DailyScrum.Attendee]
+    var atteedees: [Attendee]
     var dailyScrum: DailyScrum?
 
     init(
         id: UUID = UUID(),
         date: Date = Date(),
-        attendees: [DailyScrum.Attendee]
+        attendees: [Attendee]
     ) {
         self.id = id
         self.date = date
