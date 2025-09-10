@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		722F9D862E6E79A500281645 /* TimerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 722F9D852E6E79A500281645 /* TimerKit */; };
+		723F309E2E713EF2008B3F62 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723F309D2E713EEE008B3F62 /* PreviewContainer.swift */; };
 		725E4D102E6E746D0065CEF5 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 725E4D0F2E6E746D0065CEF5 /* ThemeKit */; };
 		72FC6A572E6636560083C891 /* Scrum+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FC6A562E6636520083C891 /* Scrum+Samples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		722954732E649A0700330FF1 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		723F309D2E713EEE008B3F62 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		72FC6A562E6636520083C891 /* Scrum+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scrum+Samples.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +43,7 @@
 		721A4F4C2E66320600823F09 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				723F309D2E713EEE008B3F62 /* PreviewContainer.swift */,
 				72FC6A562E6636520083C891 /* Scrum+Samples.swift */,
 			);
 			path = "Preview Content";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				723F309E2E713EF2008B3F62 /* PreviewContainer.swift in Sources */,
 				72FC6A572E6636560083C891 /* Scrum+Samples.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
