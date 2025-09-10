@@ -6,11 +6,14 @@
 //
 
 import Foundation
+import SwiftData
 
-struct History: Identifiable {
-    let id: UUID
-    let date: Date
+@Model
+class History: Identifiable {
+    var id: UUID
+    var date: Date
     var atteedees: [DailyScrum.Attendee]
+    var dailyScrum: DailyScrum?
 
     init(
         id: UUID = UUID(),

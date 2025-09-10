@@ -49,7 +49,7 @@ struct DetailEditView: View {
                     TextField("New attendee", text: $attendeeName)
                     Button {
                         withAnimation {
-                            let attendee = DailyScrum.Attendee(
+                            let attendee = Attendee(
                                 name: attendeeName
                             )
                             scrum.attendees.append(attendee)
@@ -66,10 +66,10 @@ struct DetailEditView: View {
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
                 Button("Cancel") {
-                   dismiss()
+                    dismiss()
                 }
             }
-            
+
             ToolbarItem(placement: .confirmationAction) {
                 Button("Done") {
                     saveEdits(scrum)
